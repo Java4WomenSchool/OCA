@@ -3,12 +3,20 @@ package chapter2;
 public class ReviewQuestions {
     
     public static void main(String[] args) {
-        ques15();
+        ques14();
       /*
         ques15();
         ques18();
         ques18_2();
 */
+    }
+    
+    public static void ques14(){
+        int c = 7;
+        int result = 4;
+        result += ++c;
+        System.out.println(result);
+        System.out.println(c);
     }
     
     public static void ques15(){
