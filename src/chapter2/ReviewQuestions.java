@@ -3,12 +3,21 @@ package chapter2;
 public class ReviewQuestions {
     
     public static void main(String[] args) {
-        ques14();
+        ques20();
       /*
+        ques7();
+        ques14();
         ques15();
         ques18();
         ques18_2();
+        ques20();
 */
+    }
+    
+    public static void ques7(){
+        int x = 5;
+        System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
+        System.out.println((x > 2) ? ((x < 4) ? 10 : 8) : 7);
     }
     
     public static void ques14(){
@@ -60,5 +69,16 @@ public class ReviewQuestions {
     }
      System.out.println(count);
  }   
-    
+    public static void ques20(){
+        final char a = 'A', d = 'D';
+        char grade = 'B';
+        
+        switch (grade) {
+            case a:
+            case 'B': System.out.print("great");
+            case 'C': System.out.print("good"); break;
+            case d:
+            case 'F': System.out.print("not good");
+        }        
+    }
 }
